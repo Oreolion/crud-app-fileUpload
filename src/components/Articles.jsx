@@ -25,7 +25,7 @@ const Articles = () => {
       {articles.length === 0 ? (
         <p>No Articles Found!</p>
       ) : (
-        articles.map(({ id, title, Description, imageUrl, createdAt }) => {
+        articles.map(({ id, title, description, imageUrl, createdAt }) => {
           return (
             <div className="border mt-3 p-3 bg-light" key={id}>
               <div className="row">
@@ -39,7 +39,7 @@ const Articles = () => {
                 <div className="col-9 ps-3">
                   <h2>{title}</h2>
                   <p>{createdAt.toDate().toDateString()}</p>
-                  <h4>{Description}</h4>
+                  <h4>{description}</h4>
                   <DeleteArticle id={id} imageUrl={imageUrl} />
                 </div>
               </div>
