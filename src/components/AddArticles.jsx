@@ -112,7 +112,7 @@ const AddArticles = () => {
         </div>
       )}
 
-      <button className="form-control btn-primary mt-2" onClick={handlePublish}>
+      <button className="form-control btn-primary mt-2" style={{backgroundColor: "#366E8C", color: "#fff"}} onClick={handlePublish}>
         Publish
       </button>
     </div>
